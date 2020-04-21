@@ -1,0 +1,19 @@
+{
+  "name": "shiba",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@vue/cli": "^4.3.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "clean-css": "^4.2.3",
+    "gulp-clean-css": "^4.3.0"
+  },
+  "scripts": {
+    "build": "gulp"
+  }
+}
