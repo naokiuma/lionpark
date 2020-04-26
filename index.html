@@ -19,9 +19,12 @@
 <body>
     <header>
         <div class="header__bk">
+                <h1>
+                    <img src="./img/logo.png" alt="サイトロゴ">
+                </h1>
                 <nav class="nav">
                     <ul>
-                        <li class="nave-item"><a href=""><img src="./img/news-menu.png" alt="">お知らせ</a></li>
+                        <li class="nave-item"><a href=""><img src="./img/news-menu.png" alt=""><span>お知らせ</span></a></li>
                         <li class="nave-item"><a href=""><img src="./img/about-menu.png" alt="">シンハとは</a></li>
                         <li class="nave-item"><a href=""><img src="./img/event-menu.png" alt="">イベント</a></li>
                         <li class="nave-item"><a href=""><img src="./img/lion-menu.png" alt="">ライオンたち</a></li>
@@ -32,103 +35,175 @@
         </div>
     </header>
     <section class="hero">
-        <h1>
-            <img src="./img/logo.png" alt="">
-        </h1>
+        <h2>百獣の王にあいにいこう。</h2>
         <a href="#"><span></span>Scroll</a>
     </section>
 
 <!--メイン-->
 <main>
 <!--ニュースエリア-->
-<section class="news">
+<section class="news area-border">
     
     <div class="news__wrapper">
         <h2>NEWS</h2>
-        <p>2020/01/01 サンプルサンプルサンプルサンプル</p>
-        <p>2020/01/01 サンプルサンプルサンプルサンプル</p>
-        <p>2020/01/01 サンプルサンプルサンプルサンプル</p>
-        <p>2020/01/01 サンプルサンプルサンプルサンプル</p>
-        <p>2020/01/01 サンプルサンプルサンプルサンプル</p>
-        <p>2020/01/01 サンプルサンプルサンプルサンプル</p>
+        <div class="news__group">
+            <p>2020/01/01 サンプルサンプルサンプルサンプル</p>
+            <p>2020/01/01 サンプルサンプルサンプルサンプル</p>
+            <p>2020/01/01 サンプルサンプルサンプルサンプル</p>
+            <p>2020/01/01 サンプルサンプルサンプルサンプル</p>
+            <p>2020/01/01 サンプルサンプルサンプルサンプル</p>
+            <p>2020/01/01 サンプルサンプルサンプルサンプル</p>
+        </div>
     </div>
 </section>
     
    
 <!--aboutエリア-->
-   <section class="about">
+<section class="about">
         <div class="about__top__wrapper">
-        <div class="about__top__leftarea">
-            <div class="about__badge badge">
-                <img class="about__lion" src="./img/lion_icon.png" alt="">
-                シンハとは
-            </div>
-            <h3>「LIONパークシンハ」は<br>
-                ライオンと、ライオンが好きな人のための<br>
-                ライオン専用パークです。</h3>
-        </div>
-        <div class="about__top__rightarea">
-            <img src="./img/about.jpg" alt="">
-        </div>
-<!--
-        <div id="aboutarea">
-            <about-component :cssclass="'color:red'"></about-component>
-            <about-component ></about-component>
-            <about-component :cssclass="'color:blue'"></about-component>
-        </div>
--->
-
-
-       </div> 
-    </section>
-   <!--イベントエリア-->
-
-   <section class="event">
-    
-        <div class="event__wrapper">
-            <div class="event__badge badge">
-                <img class="event__lion" src="./img/lion_icon.png" alt="">
-                イベント
-            </div>
-
-            <div class="event__slide__wrapper">
-                <a href="#"><span></span>Scroll</a>
-                <div class="event__slide">
-                    <div class="event__item">
-                        
-                        <img src="./img/event1.jpg" alt="">
-                    </div>
-                    <div class="event__item">
-
-                        <img src="./img/event2.jpg" alt="">
-                    </div>
-                    <div class="event__item">
-                        <img src="./img/event3.jpg" alt="">
-                    </div>
+            <div class="about__top__leftarea">
+                <div class="about__badge badge">
+                    <img class="about__lion" src="./img/lion_icon.png" alt="ライオンロゴ">
+                    シンハとは
                 </div>
-                <div class="event__description">
-                <h3>ライオンとふれ合おう♩</h3>
-                <p class="event__item__two">
-                        シンハのライオンはとっても優しい！<br>
-                        赤ちゃんライオンはゲストと一緒に遊びたくて仕方ないみたいです。<br>
-                        <br>
-                        大人のライオンも。<br>
-                        一緒に音楽を楽しんだり、頭を撫でさせてくれます。
+                <h2>「Lionパークシンハ」<span>は<br>
+                    ライオンと、ライオンが好きな人のための<br>
+                    ライオン専用パークです。</span>
+                </h2>
+                <img class="tree__lion" src="./img/tree.png" alt="木">
+                <img class="mesu__lion" src="./img/lionmes.png" alt="ライオン">
+            </div>
+            <div class="about__top__rightarea">
+                <img src="./img/about.jpg" alt="夕日にほえる">
+            </div>
+        </div>
+        <div class="about__feature__wrapper">
+            <div class="about__feature__left">
+                <div class="feature-img-cover cover1"><img class="feature-img img-zoomup" src="./img/about-left.jpg" alt="泳ぐライオン"></div>
+                <div class="feature-img-cover cover2"><img class="feature-img img-zoomup" src="./img/group.jpg" alt="あくび"></div>
+            </div>
+            <div class="about__feature__right">
+                <h3>
+                    シンハでは、いつもリラックスした
+                    <br>ライオンたちの姿を見ることができます。
+                </h3>
+                <div class="feature-img-cover cover3"><img class="feature-img img-zoomup" src="./img/just.jpg" alt="厳かライオン"></div>
+            </div>
+        </div>
+<div class="area-border"></div>
+</section>
 
-                </p>
+
+ <!--イベントエリア-->
+
+<section class="event">
+
+    <div class="event__wrapper">
+        <div class="event__badge badge">
+            <img class="event__lion" src="./img/lion_icon.png" alt="ライオンロゴ">
+            イベント
+        </div>
+        <div class="event__detail">
+            <span>2020/5/1~2020/9/30</span>
+            <h3 class>
+            　　期間限定！ライオンと触れ合うイベントを開催します！
+            </h3>
+        </div>
+
+        <div class="event__slide__wrapper">
+            <a href="#"><span></span>Scroll</a>
+            <div class="event__slide">
+                <div class="event__item">
+                    <img src="./img/event1.jpg" alt="イベント画像1">
                 </div>
-                
+                <div class="event__item">
+                    <img src="./img/event2.jpg" alt="イベント画像2">
+                </div>
+                <div class="event__item">
+                    <img src="./img/event3.jpg" alt="イベント画像3">
+                </div>
+            </div>
+            <div class="event__description">
+            <h3>ライオンとふれ合おう♩</h3>
+            <p class="event__item__two">
+                    シンハのライオンはとっても優しい！<br>
+                    赤ちゃんライオンはゲストと一緒に遊びたくて仕方ないみたいです。<br>
+                    <br>
+                    大人のライオンも。<br>
+                    一緒に音楽を楽しんだり、頭を撫でさせてくれます。
+
+            </p>
             </div>
             
         </div>
-    </section>
+        
+    </div>
+</section>
+
+<div class="area-border"></div>
+
+<!--ギャラリーエリア-->
+<section class="gallery">
+        <div class="gallery__wrapper">
+                <div class="gallery__badge badge">
+                    <img class="gallery__lion" src="./img/lion_icon.png" alt="">
+                    ギャラリー
+                </div>
+
+            
+                <div id="gallery-area">
+                    <div v-show="showModal" v-on:click="closemodal" class="popup-modal">
+                        <img :src="modalimg" alt="ポップアップ画像">
+                    </div>
+
+                    <div class="gallery-group">
+                        <div class="each-gallery" v-for= "item in items" v-bind:key="item.id" >
+                            <div class="item" >
+                                <div class="item-cover" v-on:click="openmodal(item)"><span>{{item.text}}</span></div>
+                                <img :src="item.img" alt="">
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+        </div>
+</section>
+
+<div class="area-border"></div>
+
+<footer class="footer">
+    <div class="footer__info-area">
+        <img src="./img/logo.png" alt="フッターロゴ">
+        <p>〒100-10000 神奈川県サバンナ市　サバンナ町1-1000<br>
+        TEL:000-0000-0000</p>
+    </div>
+
+    <div class="footer__menu-area">
+        <ul>       
+            <li><a href="">お知らせ</a></li>
+            <li><a href="">シンハとは</a></li>
+            <li><a href="">イベント</a></li>
+            <li><a href="">ライオンたち</a></li>
+            <li><a href="">アクセス</a></li>
+        </ul>
+
+        <div class="footer__images">
+            <img class="youtube" src="./img/youtube.png" alt="YouTube">
+            <img class="facebook" src="./img/Facebook.png" alt="フェイスブック">
+            <img class="twitter" src="./img/Twitter.png" alt="ツイッター">
+        </div>
+        <p>©️Lion park shinha All Right reserve.</p>
+    </div>
+
+
+</footer>
 
 
 
-   
+
+
 </main>
 </body>
 
 
-<!--<script type="application/javascript" src="./js/about.js"></script>-->
+<script type="application/javascript" src="./js/gallery.js"></script>
 </html>
