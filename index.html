@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    
+    <!--スムーススクロール-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script> 
     
     <title>lion</title>
 
@@ -24,11 +29,11 @@
                 </h1>
                 <nav class="nav">
                     <ul>
-                        <li class="nave-item"><a href=""><img src="./img/news-menu.png" alt=""><span>お知らせ</span></a></li>
-                        <li class="nave-item"><a href=""><img src="./img/about-menu.png" alt="">シンハとは</a></li>
-                        <li class="nave-item"><a href=""><img src="./img/event-menu.png" alt="">イベント</a></li>
-                        <li class="nave-item"><a href=""><img src="./img/lion-menu.png" alt="">ライオンたち</a></li>
-                        <li class="nave-item"><a href=""><img src="./img/access-menu.png" alt="">アクセス</a></li>
+                        <li class="nave-item"><a href="#news"><img src="./img/news-menu.png" alt="">お知らせ</a></li>
+                        <li class="nave-item"><a href="#about"><img src="./img/about-menu.png" alt="">シンハとは</a></li>
+                        <li class="nave-item"><a href="#event"><img src="./img/event-menu.png" alt="">イベント</a></li>
+                        <li class="nave-item"><a href="#gallery"><img src="./img/lion-menu.png" alt="">ライオンたち</a></li>
+                        <!--<li class="nave-item"><a href="#access"><img src="./img/access-menu.png" alt="">アクセス</a></li>-->
                     </ul>
                     
                 </nav>
@@ -42,7 +47,7 @@
 <!--メイン-->
 <main>
 <!--ニュースエリア-->
-<section class="news area-border">
+<section class="news area-border" id="news">
     
     <div class="news__wrapper">
         <h2>NEWS</h2>
@@ -59,7 +64,7 @@
     
    
 <!--aboutエリア-->
-<section class="about">
+<section class="about" id="about">
         <div class="about__top__wrapper">
             <div class="about__top__leftarea">
                 <div class="about__badge badge">
@@ -96,7 +101,7 @@
 
  <!--イベントエリア-->
 
-<section class="event">
+<section class="event" id="event">
 
     <div class="event__wrapper">
         <div class="event__badge badge">
@@ -142,8 +147,9 @@
 
 <div class="area-border"></div>
 
+
 <!--ギャラリーエリア-->
-<section class="gallery">
+<section class="gallery" id="gallery">
         <div class="gallery__wrapper">
                 <div class="gallery__badge badge">
                     <img class="gallery__lion" src="./img/lion_icon.png" alt="">
@@ -152,9 +158,11 @@
 
             
                 <div id="gallery-area">
+                    <transition name="fade">
                     <div v-show="showModal" v-on:click="closemodal" class="popup-modal">
                         <img :src="modalimg" alt="ポップアップ画像">
                     </div>
+                </transition>
 
                     <div class="gallery-group">
                         <div class="each-gallery" v-for= "item in items" v-bind:key="item.id" >
@@ -179,11 +187,11 @@
 
     <div class="footer__menu-area">
         <ul>       
-            <li><a href="">お知らせ</a></li>
-            <li><a href="">シンハとは</a></li>
-            <li><a href="">イベント</a></li>
-            <li><a href="">ライオンたち</a></li>
-            <li><a href="">アクセス</a></li>
+            <li><a href="#news">お知らせ</a></li>
+            <li><a href="#about">シンハとは</a></li>
+            <li><a href="#event">イベント</a></li>
+            <li><a href="#gallery">ライオンたち</a></li>
+            <!--<li><a href="">アクセス</a></li>-->
         </ul>
 
         <div class="footer__images">
