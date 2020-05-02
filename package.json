@@ -15,5 +15,7 @@
   },
   "scripts": {
     "build": "gulp"
-  }
+  },
+  "repository": "https://github.com/naokiuma/lionpark.git",
+  "author": "naoya <sagalumaata@gmal.com>"
 }
